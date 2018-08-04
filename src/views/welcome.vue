@@ -46,7 +46,7 @@
       let self = this;
 
       // 随机展示title
-      self.randomNum = getRandomInt(1, 10);
+      self.randomNum = getRandomInt(0, 9);
       self.title = relation.title_words[self.randomNum].title;
     },
     methods: {

@@ -99,5 +99,20 @@
     "height": "176cm",
     "role": "边锋/左后卫",
     "num": "11号"
+  }],
+  "footballer_data_barcelona": [{
+    "name": "里奥·梅西",
+    "age": "32",
+    "nationality": "阿根廷",
+    "height": "170cm",
+    "role": "影锋",
+    "num": "10号"
+  },{
+    "name": "路易斯·阿尔贝托·苏亚雷斯",
+    "age": "32",
+    "nationality": "乌拉圭",
+    "height": "182cm",
+    "role": "前锋",
+    "num": "9号"
   }]
 }
