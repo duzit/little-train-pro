@@ -33,3 +33,4 @@ npm run lint
   - 全局引用element-ui样式
       import 'element-ui/lib/theme-chalk/index.css';
   - eslint配置在package.json中的 eslintConfig 字段或者新建.eslintrc.js文件
+  - 自定义全局样式 /src/style/global-style.css

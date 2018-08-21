@@ -1,6 +1,6 @@
 <template>
   <div>
-    <data-table v-bind="tableData"></data-table>
+    <data-table v-bind="tableData" @more="moreInfo"></data-table>
   </div>
 </template>
 
@@ -12,6 +12,9 @@ export default {
       tableData: {
         columnsType: 'football',
         dataTable: [],
+        options: [
+          {name: '更多', callback: 'more'},
+        ],
       },
     }
   },
@@ -21,7 +24,10 @@ export default {
     self.tableData.dataTable = relation.footballer_data_liverpool;
   },
   methods: {
-
+    // 更多
+    moreInfo(row) {
+      this.$router.push({ path: "footballerInfo", query: { info: row } });
+    },
   },
 }
 </script>

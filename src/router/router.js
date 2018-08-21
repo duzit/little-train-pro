@@ -7,6 +7,9 @@ import word from '../views/word'
 import football from '../views/football'
 import movie from '../views/movie'
 
+// 球员详细信息
+import footballerInfo from '../components/football/footballerInfo'
+
 // 路由配置
 const routes = [
   {
@@ -28,6 +31,10 @@ const routes = [
       {
         path: '/movie',
         component: movie,
+      },
+      {
+        path: '/footballerInfo',
+        component: footballerInfo,
       },
     ],
   },

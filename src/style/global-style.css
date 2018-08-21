@@ -1,0 +1,12 @@
+/* 自定义全局样式 */
+
+/* el-menu */
+.el-menu {
+  background-color: #DCDFE6;
+}
+.el-menu-item {
+  border-bottom: 1px solid gray;
+}
+.el-menu-item.is-active {
+  background-color:antiquewhite;
+}

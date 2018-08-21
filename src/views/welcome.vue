@@ -7,7 +7,7 @@
     </div>
     <div class="welcome-sider">
       <!-- el-menu要有router标识 el-menu-item中的route才有效 -->
-      <el-menu router background-color="#DCDFE6">
+      <el-menu router>
         <el-menu-item index="1" :route="{ path: word}">
           <img src="../assets/icon/word.png">
           <span slot="title"> 文字</span>
@@ -17,7 +17,7 @@
           <span slot="title"> 足球</span>
         </el-menu-item>
         <el-menu-item index="3" :route="{ path: movie}">
-          <img src="../assets/icon/move.png">
+          <img src="../assets/icon/movie.png">
           <span slot="title"> 电影</span>
         </el-menu-item>
       </el-menu>
@@ -61,6 +61,7 @@
   height: 80px;
   box-sizing: border-box;
   border: 1px solid #409EFF;
+  box-sizing: border-box;
   background-color: #DCDFE6;
 }
 .welcome-sider {
