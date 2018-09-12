@@ -28,7 +28,7 @@
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 h1 {
   font-size: 30px;
 }
@@ -38,8 +38,8 @@ h1 {
   .bg {
     /* 宽高设置与否不影响 */
     width: 100%;
-    height: 927px;
-    // position: absolute; // 绝对定位后 原本相对于父元素的宽高将变为相对于html或者body
+    height: 100vh;
+    position: absolute; // 绝对定位后 原本相对于父元素的宽高将变为相对于html或者body
     /* 上下左右都需要设置为0 去除横向纵向滑动条 */
     top: 0px;
     bottom: 0px;

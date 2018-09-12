@@ -10,3 +10,14 @@
 .el-menu-item.is-active {
   background-color:antiquewhite;
 }
+
+/* 面包屑 */
+.el-breadcrumb {
+  padding: 10px;
+}
+
+/* 按钮 */
+.el-button--text {
+  color: #606266;
+  ;
+}
