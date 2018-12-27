@@ -7,6 +7,9 @@ import word from '../views/word'
 import football from '../views/football'
 import movie from '../views/movie'
 
+// oneday
+import oneday from '../views/oneday/oneday'
+
 // 球员详细信息
 import footballerInfo from '../components/football/footballerInfo'
 
@@ -37,6 +40,10 @@ const routes = [
         component: footballerInfo,
       },
     ],
+  },
+  {
+    path: '/oneday',
+    component: oneday,
   },
 ];
 

@@ -10,15 +10,15 @@
       <el-menu router>
         <el-menu-item index="1" :route="{ path: word }">
           <img src="../assets/icon/word.png">
-          <span slot="title"> 文字</span>
+          <span slot="title">&nbsp;文字</span>
         </el-menu-item>
         <el-menu-item index="2" :route="{ path: football }">
           <img src="../assets/icon/football.png">
-          <span slot="title"> 足球</span>
+          <span slot="title">&nbsp;足球</span>
         </el-menu-item>
         <el-menu-item index="3" :route="{ path: movie }">
           <img src="../assets/icon/movie.png">
-          <span slot="title"> 电影</span>
+          <span slot="title">&nbsp;电影</span>
         </el-menu-item>
       </el-menu>
     </div>

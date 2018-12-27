@@ -3,7 +3,8 @@
     <div class="main">
       <div class="bg">
         <h1>{{msg}}</h1>
-        <el-button type="text" @click="more">了解更多</el-button>
+        <el-button class="main-button" type="text" @click="oneday">Oneday</el-button>
+        <el-button class="main-button" type="text" @click="more">Personal</el-button>
       </div>
     </div>
   </section>
@@ -13,7 +14,7 @@
   export default {
     data() {
       return {
-        msg: 'Welcome',
+        msg: 'Welcome to Ben Zone',
       }
     },
     mounted() {
@@ -23,6 +24,9 @@
       // 了解更多
       more() {
         this.$router.push({ path: 'welcome' });
+      },
+      oneday() {
+        this.$router.push({ path: 'oneday' });
       },
     },
   }
@@ -52,6 +56,11 @@ h1 {
     background-image: url('../assets/image/main.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    .main-button {
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 20px;
+    }
   }
 }
 </style>
