@@ -20,8 +20,8 @@
 </script>
 <style lang="scss" scoped>
 .view-side {
-  width: 200px;
-  height: 100vh;
+  // width: 30%;
+  height: 100%;
   border: 1px solid rebeccapurple;
 }
 

@@ -7,7 +7,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 // 引用注册全局组件的文件
 import './components/index'; 
 // 自定义全局样式
-import './style/global-style.css'
+import './style/global-style.scss'
+import './style/index.scss'
 
 Vue.use(ElementUI);
 
