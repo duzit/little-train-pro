@@ -17,6 +17,7 @@
       <el-col :span="18">
         <transition name="detail">
           <oneday-detail
+            ref="onedayDetail"
             class="detail-layout"
           >
           </oneday-detail>
@@ -60,7 +61,7 @@ export default {
       })
     },
     handleNodeClick(data, node) {
-
+      this.$refs.onedayDetail.locationHref(data.herf)
     },
   }
 }
@@ -68,6 +69,7 @@ export default {
 <style lang="scss" scoped>
 .oneday {
   margin-top: 10px;
+  overflow: auto;
   .el-row,
   .el-col {
     height: 100%;

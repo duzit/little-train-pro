@@ -21,6 +21,14 @@
         <p><i>scale()</i> 元素的尺寸增加或减少，根据给定的宽度(x轴)和高度(y轴)参数。</p>
       </div>
       <div class="item-detail">
+        <p class="el-icon-document">
+          <b>{{ ' animation' }}</b>
+          <span>
+            {{ ' 配合@keyframes使用' }}
+          </span>
+        </p>
+      </div>
+      <div class="item-detail">
         <p>
           <b>示例：</b>
           <span>{{ '鼠标悬浮变化' }}</span>
@@ -41,11 +49,32 @@
           <el-col :span='12'>
             <div class="css-demo-4">{{ 'scale' }}</div>
           </el-col>
+          <el-col :span='12'>
+            <div class="css-demo-5">{{ 'animation' }}</div>
+          </el-col>
         </el-row>
       </div>
     </div>
     <div>
       <h3 id="next-tick">{{ '# Vue.nextTick()' }}</h3>
+      <div class="item-detail">
+        <p>在下次DOM更新循环结束以后执行延迟回调，在修改数据之后立即使用这个方法，获取更新后的DOM。</p>
+        <pre>
+          // 修改数据
+          vm.msg = 'Hello'
+          // DOM还未更新
+          Vue.nextTick(() => {
+            // DOM更新了
+          })
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 id="opacity">{{ '# opacity' }}</h3>
+      <div class="item-detail">
+        <p>设置div元素的不透明级别</p>
+        <div class="css-opacity">{{ 'Opacity ' }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -60,7 +89,9 @@ export default {
     
   },
   methods: {
-    
+    locationHref(href) {
+      location.href = href
+    }
   },
 }
 </script>
@@ -134,6 +165,37 @@ export default {
     height: 100px;
     background: #E6A23C;
     transform: scale(1.2)
+  }
+
+  .css-demo-5 {
+    width: 100px;
+    height: 100px;
+    background: #409EFF;
+    animation: anima 3s;
+    -webkit-animation: anima 3s;
+  }
+  @keyframes anima {
+    0% {
+      background: rebeccapurple;
+      transform: scale(0);
+    }
+    50% {
+      background: #E6A23C;
+      transform: scale(1.5);
+    }
+    100% {
+      background: #409EFF;
+      transform: scale(1);
+    }
+  }
+
+  .css-opacity {
+    width: 60px;
+    height: 40px;
+    background: #67C23A;
+  }
+  .css-opacity:hover {
+    opacity: 0.5;
   }
 }
 </style>

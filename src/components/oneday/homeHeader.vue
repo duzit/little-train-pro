@@ -36,6 +36,7 @@
   .home-button {
     float: left;
     padding-left: 20px;
+    margin-top: 5px;
   }
   .home-span {
     font-weight: 600;
