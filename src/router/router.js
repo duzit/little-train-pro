@@ -13,6 +13,8 @@ import oneday from '../views/oneday/oneday'
 // 球员详细信息
 import footballerInfo from '../components/football/footballerInfo'
 
+import layout from '../views/layout'
+
 // 路由配置
 const routes = [
   {
@@ -43,7 +45,12 @@ const routes = [
   },
   {
     path: '/oneday',
-    component: oneday,
+    component: layout,
+    redirect: '/oneday/index',
+    children: [{
+      path: 'index',
+      component: oneday
+    }]
   },
 ];
 

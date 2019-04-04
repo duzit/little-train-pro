@@ -61,7 +61,7 @@ export default {
       })
     },
     handleNodeClick(data, node) {
-      this.$refs.onedayDetail.locationHref(data.herf)
+      // this.$refs.onedayDetail.locationHref(data.herf)
     },
   }
 }

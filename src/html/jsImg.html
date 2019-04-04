@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Image</title>
+</head>
+<body>
+  <h1>Snapshots</h1>
+  <ul>
+    <li>
+      <a 
+        href="images/flowers.jpg" 
+        onclick="showPic(this); return false"
+        title="Flower">
+        梅花
+      </a>
+    </li>
+    <li>
+      <a 
+      href="images/sunset.jpg" 
+      onclick="showPic(this); return false"
+      title="Sunset">
+      日落
+    </a>
+    </li>
+    <li>
+      <a 
+        href="images/trees.jpg" 
+        onclick="showPic(this); return false"
+        title="Trees">
+        森林
+      </a>
+    </li>
+    <li>
+      <a 
+        href="images/windmill.jpg" 
+        onclick="showPic(this); return false"
+        title="Windmill">
+        风车
+      </a>
+    </li>
+  </ul>
+  <img id="placeholder" src="images/default.jpg" alt="">
+  <p id="description">Choose an image</p> 
+  <script src="script/showPic.js"></script>
+</body>
+
+<style>
+  body {
+    color: #333;
+    background-color: #ccc;
+    margin: 1rem 10%;
+  }
+
+  h1 {
+    color: #333;
+    background-color: transparent;
+  }
+
+  a {
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    padding: 1rem;
+    list-style: none;
+  }
+
+  img {
+    display: block;
+    max-width: 1024px;
+    max-height: 1024px;
+    clear: both;
+  }
+</style>
+</html>

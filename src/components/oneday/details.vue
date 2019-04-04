@@ -76,6 +76,35 @@
         <div class="css-opacity">{{ 'Opacity ' }}</div>
       </div>
     </div>
+    <div>
+      <h3 id="mvvm">{{ '# MVVM' }}</h3>
+      <div class="item-detail">
+        <p>model-view-viewmodel</p>
+        <span>
+          在前端页面中，把model用纯JavaScript对象表示，view负责页面，两者做到最大限度的分离。
+          把model和view关联起来就是viewmodel，负责把model数据同步到view显示出来，同时负责把
+          view的修改同步回model。
+        </span>
+        <br>
+        <span>
+          <b>设计思想：</b>
+          关注model的变化，让MVVM框架自动更新DOM的状态，从而把开发者从
+          繁琐的DOM操作中解脱出来。
+        </span>
+      </div>
+    </div>
+    <div>
+      <h3 id="math">{{ '# Math.random()' }}</h3>
+      <div class="item-detail">
+        <p>一个浮点型的伪随机数在[0, 1)之间</p>
+        <pre>
+          Math.ceil(0.1) // 1
+          Math.ceil(1.1) // 2
+          Math.floor(0.1) // 0
+          Math.floor(1.9) // 1 
+        </pre>
+      </div>
+    </div>
   </div>
 </template>
 <script>
