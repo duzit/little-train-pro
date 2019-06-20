@@ -105,21 +105,63 @@
         </pre>
       </div>
     </div>
+    <div>
+      <h3 id="watch">{{ '# watch' }}</h3>
+      <div class="item-detail">
+        <el-row :gutter="20">
+          <el-col :span="12">
+            <el-button @click="changeA">改变a</el-button>
+          </el-col>
+          <el-col :span="12">
+            <el-button @click="changeB">改变b</el-button>
+          </el-col>
+          <el-col></el-col>
+        </el-row>
+        <el-row :gutter="20">
+          <el-col :span="12">
+            {{ 'a:' + a + '; oldA:' + oldA }}
+          </el-col>
+          <el-col :span="12">
+            {{ 'b.b1:' + b.b1 + '; oldB:' + oldB }}
+          </el-col>
+        </el-row>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-
+      a: 1,
+      b: {
+        b1: 2
+      },
+      oldA: '',
+      oldB: ''
     }
   },
   mounted() {
     
   },
+  watch: {
+    a(val, old) {
+      this.oldA = old
+    },
+    // 对象监控
+    'b.b1'(val, old) {
+      this.oldB = old
+    }
+  },
   methods: {
     locationHref(href) {
       location.href = href
+    },
+    changeA() {
+      this.a += this.a
+    },
+    changeB() {
+      this.b.b1 += this.a
     }
   },
 }
